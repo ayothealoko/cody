@@ -1,0 +1,256 @@
+html {font-size: 137.5%;} /*22px*/
+
+body {
+  background-color: white;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.65;
+  color: #333;
+  padding:0;
+  margin:0;  
+}
+
+p {margin-bottom: 1.15rem;}
+
+h1, h2, h3, h4, h5 {
+  margin: 2.75rem 0 1.05rem;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  line-height: 1.15;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3.052rem;
+}
+
+h2 {font-size: 2.441rem;}
+
+h3 {font-size: 1.953rem;}
+
+h4 {font-size: 1.563rem;}
+
+h5 {font-size: 1.25rem;}
+
+small, .text_small {font-size: 0.8rem;}
+.medium-text{
+    font-size: 1.563rem;
+}
+
+.unlink{
+    text-decoration: none;
+}
+/* APP STYLES */
+body{
+    background-color:#f0f0f0;
+}
+
+.app{
+    width:75%;
+    margin:25px auto 0;
+    padding:0;
+    background-color:#ffffff;
+    box-shadow: 5px 5px 12px #999999;
+    display:flex;
+    flex-direction:column;
+}
+
+.app__main{
+    flex-grow:1;
+    display:flex;
+    width:100%;
+}
+
+.app__header{
+    width:100%;
+    background-color:#37c8ab;
+    padding-top: .2em;
+    padding-bottom:.2em;
+    text-align:center;
+}
+
+.app__header h1{
+    font-family:cookie;
+    color:#ffffff;
+}
+.sidebar{
+    width:10em;
+    flex-shrink:0;
+}
+
+.sidebar__link{
+    box-sizing:border-box;
+    display:block;
+    color:black;
+    font-size:1.2rem;
+    margin-top:.5em;
+    padding-left:.5em;
+    width:100%;
+}
+
+a.sidebar__link:first-child{
+    margin-top:0;
+}
+
+.sidebar__link--active{
+    border-right: solid 4px #37c8ab;
+    background-color:#ecf0f0;
+}
+
+
+.main{
+    background-color: #ecf0f0;
+    height: 450px;
+    padding:2em;
+    flex-grow:1;
+    overflow-y: scroll;
+}
+
+.tilecollection{
+    margin: 2em 0;
+}
+
+.tilecollection > *{
+    margin: 0.5em 0;
+}
+
+
+.tile{
+    width:100%;
+    padding:.5em 2em;
+    box-sizing:border-box;
+    background-color:#ffffff;
+    display:flex;
+    justify-content:space-between;
+}
+
+.tile--blink{
+    animation: blink 2s linear 0s 2;
+}
+
+@keyframes blink{
+    50% {
+	background-color: #37c8ab;
+    }
+}
+
+
+.onoffbutton{
+    display:flex;
+}
+
+.onoffbutton__item{
+    margin-left:2em;
+    display:flex;
+    align-items:center;
+}
+
+.onoffbutton__circle{
+    width:0.8em;
+    height:0.8em;
+    border-radius:50%;
+    background-color:#666666;
+    margin-right:.3em;
+}
+
+.onoffbutton--on{
+   background-color:#00ff00; 
+}
+
+.onoffbutton--off{
+    background-color:#ff0000;
+}
+
+.texttile{
+   padding-left:5px; 
+}
+.texttile__input{
+    border:none;
+    padding:0.1em;
+    padding-left:1em;
+    width:8em;
+    font-size:1.2rem;
+    background-color:#ecf0f0;
+}
+
+
+.toggle__item{
+    border:none;
+    margin:0;
+    font-size:1.2rem;
+    color:#ffffff;
+    background-color:#666666;
+}
+
+.toggle__item--border{
+    border-right:solid 4px #ffffff;
+}
+.toggle__item--active{
+    background-color:#37c8ab;
+}
+
+
+.entrytext{
+    display:flex;
+}
+
+.addbutton, .deletebutton{
+    border:none;
+    margin:0;
+    font-size:1.2rem;
+    color:#ffffff;
+    margin-left:.5em; 
+}
+
+.addbutton{
+    background-color:#37c8ab;
+}
+
+.deletebutton{
+    background-color:#ff0000;
+}
+
+
+.file{
+    background-color:#ffffff;
+    margin-bottom:2em;
+    width:100%;
+}
+
+.file__h4{
+    padding: .25rem 0 0.25em 1em;
+    margin:0;
+    color:#ffffff;
+    background-color:#37c8ab;
+}
+
+.line{
+    margin: 0 0.5rem;
+    display:flex;
+    align-items:baseline;
+}
+
+.line__number{
+    color:#37c8ab;
+    width:1.5em;
+    padding-right:3px;
+    text-align:right;
+    flex-shrink: 0;
+}
+
+.line__content{
+    margin:0;
+    word-break: break-all;
+}
+
+.line__link{
+    margin-right:0.3em;
+    text-decoration:none;
+    background-color:#37c8ab;
+    color:#ffffff;
+}
+
+.line__span{
+    margin-right:0.3em;
+}
+
