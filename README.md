@@ -7,7 +7,7 @@ Cody config is a web app that teaches people how to write webpack and babel conf
 
 ## Installation
 
-To install simply git clone this project and type 'npm start'. There is also an online version at [codyconfig.com](https://www.codyconfig.com)
+To install, simply git clone this project and type 'npm start'. There is also an online version at [codyconfig.com](https://cody-config.onrender.com/#)
 
 ```bash
 git clone https://github.com/ayothealoko/codyconfig/
