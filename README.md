@@ -1,6 +1,6 @@
 # Cody Config
 
-Cody config is a web app that teaches people how to write webpack and babel config files. It lets you choose the configuration you want and the inspect the config files to what a certain line in the config file is changing.
+Cody config is a web app that teaches people how to write webpack and babel config files. You choose the configuration you want, then click on the the green links in the output page to interact with the config files. It provides an easy way to learn the basics of webpack and babel.
 
 ![Cody Config main screenshot](https://i.imgur.com/E1IxxJj.png)
 ![Cody Config output](https://i.imgur.com/OKNMFCN.png)
