@@ -88,9 +88,10 @@ $Background-color2: #fff;
 .huge-button-group{
     padding-top:24px;
     margin: 0 auto;
-    width: 80%;
+    width: 70%;
     display:flex;
     justify-content:space-between;
+    align-items:flex-start;
 }
 
 
@@ -104,11 +105,57 @@ $Background-color2: #fff;
     box-sizing:border-box;
     border:2px solid #000;
     color:$Font-color1;
+    font-size:5rem;
+    line-height:1.5;
+    padding:1.2em 0;
+}
 
-    span{
-	font-size:5rem;
-	line-height:1.5;
-	padding:1.2em 0;
-	display:block;
+.wrapper-button{
+    width: 49.4%;
+
+    &__button{
+	width:100%;
     }
 }
+
+.options{
+    padding-top:1.66rem;
+    width: 49.4%;
+
+    &__row{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+    }
+}
+
+
+/* Components */
+.toggle{
+    width:3rem;
+    height:1.5rem;
+    border-radius:0.75em;
+    background-color:#000;
+    position:relative;
+    display:flex;
+    align-items:center;
+
+    &-container{
+	display:inline-block;
+    }
+
+    &__button{
+	width:1.2rem;
+	height:1.2rem;
+	border-radius:0.6rem;
+	background-color:#c4c4c4;
+	margin:0 0.2em;
+	position:absolute;
+	trasition:all 0.4s ease;
+    }
+
+    &--off{
+	left:1.4rem;
+    }
+}
+
