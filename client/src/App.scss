@@ -23,6 +23,26 @@ $Font-color2: #fff;
 $Background-color1: #000;
 $Background-color2: #fff;
 
+body{
+    font-family:$Regular-font; 
+}
+
+.back-button{
+    width:7rem;
+    background-color:#000;
+    border:none;
+    background-image:url(./images/back-arrow.svg);
+    background-position:left;
+    background-size:2rem;
+    color:#fff;
+    background-repeat:no-repeat;
+    position:absolute;
+    left:2rem;
+    top:.5rem;
+    font-size:1.25rem;
+
+}
+
 .large-logo{
     font-family:$Logo-font;
     line-height:1.5;
@@ -60,6 +80,7 @@ $Background-color2: #fff;
 
 .header{
     width:100%;
+    position:relative;
     background-color:$Background-color1;
 
     &__h1{
@@ -119,16 +140,107 @@ $Background-color2: #fff;
 }
 
 .options{
-    padding-top:1.66rem;
     width: 49.4%;
 
     &__row{
+	padding-right:1rem;
 	display:flex;
 	align-items:center;
 	justify-content:space-between;
     }
 }
 
+.main-wrapper{
+    margin:0 auto;
+    width:70%;
+    display:flex;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.page-content, .page-description{
+    width:40%;
+}
+
+.page-description{
+    &__header{
+	font-size:2.6rem;
+	line-height:1.6;
+	margin:0;
+    }
+
+    &__copy{
+	margin:.25rem 0 0;
+	font-size:1.5rem;
+	line-height:1.67;
+    }
+
+}
+
+.page-content{
+    margin-top:0.5rem;
+}
+
+.type-display{
+    box-sizing:border-box;
+    min-height:6.125rem;
+    width: 100%;
+    background-color:#c4c4c4;
+    padding:.5rem;
+    
+    &__container{
+	margin-top:0.5rem;
+    }
+
+    &__description{
+	font-size:.75rem;
+	line-height:1.67;
+    }
+
+    &__item{
+	display:inline-block;
+	text-align:center;
+	padding: 0 .5rem;
+	border-radius:.5rem;
+	background-color:#fff;
+	margin-right:.25rem;
+	margin-bottom:0.5rem
+    }
+
+}
+
+.filetype{
+    width:100%;
+    margin-bottom:1rem;
+
+    &__header{
+	font-size:1.5rem;
+	line-hieght:1.67;
+	margin:0 0 .25rem;
+    }
+
+    &__content{
+    box-sizing:border-box;
+    width: 100%;
+    background-color:#c4c4c4;
+    padding:.5rem;
+    }
+
+    &__item{
+	display:inline-block;
+	text-align:center;
+	padding: 0 .5rem;
+	border:none;
+	border-radius:.5rem;
+	background-color:#fff;
+	margin-right:.25rem;
+
+	&--active{
+	    color:#fff;
+	    background-color:#000;
+	}
+    }
+}
 
 /* Components */
 .toggle{
